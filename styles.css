@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-family: 'Inter';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 90%;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+#temp {
+    font-size: 80px;
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    outline: none;
+    flex: 1;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+#submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#submit:hover {
+    background-color: rgb(80, 80, 80);
+    transform: scale(1.05);
+}
+
+#submit:active {
+    transform: scale(0.95);
+}
+.hide {
+    display: none;
+}
+
+a { 
+    margin-top: 15px;
+}
